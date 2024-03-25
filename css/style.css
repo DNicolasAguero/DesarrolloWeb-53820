@@ -10,8 +10,8 @@ a{
     text-decoration: none;
 }
 .LogoLPF {
-    width: 104px;
-    height: 135px;
+    width: 99px;
+    height: auto;
 }
 .ligaLetras {
     width: 109px;
@@ -21,9 +21,10 @@ a{
     display: flex;
     position: absolute;
     z-index: 10;
-    margin-top: 10px;
+    margin-top: 9px;
     margin-left: 30px;
     align-items: center;
+    gap: 5px;
 }
 .escudos {
     display: flex;
@@ -106,7 +107,7 @@ list-style: none;
     line-height: 1.2;
     text-shadow: 3px 3px 3px rgba(128, 128, 128, 0.692);
     margin-top: 20px;
-    margin-left: 10px
+    margin-left: 9px
 }
 .NoticiaSecundaria {
     color: white;
@@ -335,6 +336,7 @@ margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
+    flex-wrap: wrap;
 }
 .DivEstadisticas img {
     width: 420px;
@@ -353,4 +355,213 @@ margin-top: 20px;
 }
 .DivCalendario img {
     width: 1180px;
+}
+
+
+@media (max-width: 768px) {
+
+    /* BARRA DE NAVEGACION */
+
+    .escudos {
+        width: 768px;
+        height: 22px;
+        margin-left: 0px;
+    }
+    .Nav {
+        width: 100%;
+        height: 60px;
+    }
+    .Nav ul {
+        font-size: 16px;
+        gap: 35px;
+        margin-left: 220px;
+    }
+    .LogoLetra {
+        margin-top: 10px;
+        margin-left: 40px;
+    }
+    .LogoLPF {
+        width: 60px;
+        height: auto;
+    }
+    .ligaLetras {
+        width: 70px;
+        height: auto;
+    }
+
+    /* ESTADISTICAS */
+
+    .DivEstadisticas {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-top: 35px;
+    }
+    .DivEstadisticas img {
+        width: 550px;
+        height: auto;
+    }
+
+    /* FOOTER */
+
+    .Footer {
+        width: 100%;
+        height: 100px;
+        margin-top: 40px;
+    }
+    .LogoFooter {
+        width: 100px;
+        height: auto;
+    }
+    .LogoIg {
+        width: 30px;
+        height: auto;
+    }
+    .LogoTwitter {
+        width: 30px;
+        height: auto;
+    }
+
+    /* CALENDARIO */
+
+    .DivCalendario{
+        width: 100%;
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .DivCalendario img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* TABLA */
+
+    .TituloTabla {
+        width: 100%;
+        height: 95px;
+        margin-top: 25px;
+    }
+    .TituloTabla h2 {
+        font-size: 30px;
+    }
+    .TablasTabla {
+        margin-top: 30px;
+    }
+    .TablasTabla img {
+        width: 370px;
+        height: auto;
+    }
+    .TablaAnual {
+        margin-top: 30px;
+    }
+    .TablaAnual img {
+        width: 749px;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* BARRA DE NAVEGACION */
+    
+    .escudos {
+        width: 420px;
+        height: auto;
+        margin-left: -60px;
+    }
+    .Nav {
+        width: 100%;
+        height: 50px;
+    }
+    .Nav ul {
+        font-size: 10px;
+        gap: 8px;
+        margin-left: 53px;
+    }
+    .LogoLetra {
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .LogoLPF {
+        width: 45px;
+        height: auto;
+    }
+    .ligaLetras {
+        width: 0px;
+        height: auto;
+    }
+
+        /* FOOTER */
+    
+        .Footer {
+            width: 100%;
+            height: 80px;
+            margin-top: 30px;
+        }
+        .LogoFooter {
+            width: 75px;
+            height: auto;
+        }
+        .LogoIg {
+            width: 20px;
+            height: auto;
+        }
+        .LogoTwitter {
+            width: 20px;
+            height: auto;
+        }
+
+    /* ESTADISTICAS */
+
+    .DivEstadisticas {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .DivEstadisticas img {
+        width: 270px;
+        height: auto;
+    }
+
+    /* CALENDARIO */
+
+    .DivCalendario{
+        width: 100%;
+        margin-top: 30px;
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+    .DivCalendario img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* TABLA */
+
+    .TituloTabla {
+        width: 100%;
+        height: 60px;
+        margin-top: 20px;
+    }
+    .TituloTabla h2 {
+        font-size: 20px;
+    }
+    .TablasTabla {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .TablasTabla img {
+        width: 300px;
+        height: auto;
+        align-self: center;
+    }
+    .TablaAnual {
+        margin-top: 20px;
+    }
+    .TablaAnual img {
+        width: 310px;
+        height: auto;
+    }
 }
